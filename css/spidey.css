@@ -1,0 +1,57 @@
+/**
+Author: Bryan Tobin
+Version: 1
+**/
+body {
+    padding-top:5rem;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo {
+    width: 9%;
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+.toLeft {
+    margin-left: 85%;
+}
+#giantBox {
+    position:absolute;
+    background-color:rgb(144,144,144);
+    margin-bottom: -2%;
+    height: 50000px;
+    width: 100%;
+    margin-top: -25%;
+    z-index: 10000;
+    transition: 2s ease;
+}
+#loading {
+    position: absolute;
+    background: url('../content/spiderswing.jpg');
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+    width: 100%;
+    z-index: 20000;
+    transition:1s ease;
+}
+#waiting_for_name {
+    color: white;
+}
+/** Media Queries **/
+@media only screen and (max-width:1120px) {
+    .toleft {
+        margin-left: 80%;
+    }
+}
+@media only screen and (max-width:950px) {
+    .toLeft {
+        margin-left: 70%;
+    }
+    .nav-brand {
+        display: none;
+    }
+}

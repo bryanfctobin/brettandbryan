@@ -1,0 +1,41 @@
+/**
+Version 1.1
+Author Bryan Tobin
+Codename: Figgy Brown
+**/
+#main {
+    padding-top:5%;
+}
+#music {
+    display:none;
+}
+body {
+    background-color:black;
+    transition: 0.5s ease-in-out;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+.row p, button {
+    font-family: 'Source Coe Pro', monospace;
+    font-size:90px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    z-index:9999;
+    background: url(http://i.imgur.com/HcTQnzJ.gif) 50% 50% no-repeat rgb(249, 249, 249);
+    opacity: .8;
+}
+@media only screen and (max-width:800px) {
+    button {
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,77 @@
+/* DOM Elements */
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #5aaafa;
+    transition: 1s ease;
+}
+
+h3 {
+    font-size: 32px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 6px;
+    transition: 2s ease;
+    text-shadow: 0px 0px 25px #000000;
+}
+
+hr {
+    width: 80%;
+}
+
+/* Classes */
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.btn-success {
+    background-color: #e71d32;
+    width: 25%;
+    padding: 2%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: 1s ease;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 15px;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+    background-color: #b70d1e;
+}
+
+.mainText {
+    padding: 15% 0 0 0%;
+    font-size: 36px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 6px;
+    transition: 2s ease;
+    text-shadow: 0px 0px 25px #000000;
+}
+
+/* IDs */
+
+#thisPlaceholder {
+    margin-left: 50%
+}
+
+#thatPlaceholder {
+    margin-right: 50%;
+}
+
+@media screen and (max-width:600px) {
+    .mainText {
+        padding: 15% 6%;
+        font-size: 14px;
+        line-height: 2;
+    }
+}
