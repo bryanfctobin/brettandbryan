@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117963355-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-117963355-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brett &amp; Bryan</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/content/timber.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/vue.js"></script>
+    <!-- Keyframe Animations: https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp -->
+    <style>
+        .img-responsive {
+            position: relative;
+            animation: shake 0.5s infinite;
+            /*animation:colorize 5s;*/
+            padding-bottom:5%;
+        }
+        .color {
+            position: relative;
+            animation: colorize 5s;
+        }
+        @keyframes shake {
+            0%  {top: 0px; left:0px;}
+            50% {top: 50px; left: 50px;}
+            100%{top: 0px; left: 0px}
+        }
+        @keyframes colorize {
+            0% {filter:grayscale(100%) blur(100px);}
+            25% {filter:grayscale(75%) blur(75px);}
+            50% {filter:grayscale(50%) blur(50px);}
+            75% {filter:grayscale(25%) blur(25px);}
+            100% {filter:grayscale(0%) blur(0px);}
+        }
+        button {
+            background-color: black;
+            color: white;
+            border-radius:5px;
+            transition: 1s ease;
+            text-align: center;
+            display: block;
+            margin:auto;
+            margin-top:15%;
+            border:none;
+            -webkit-transition-property: padding; /* Safari */
+            -webkit-transition-duration: 2s; /* Safari */
+            transition-property: padding;
+            transition-duration: 2s;
+        }
+        button:hover {
+            background-color:white;
+            color:black;
+            padding: 5%;
+            transition: 2s ease-in-out;
+        }
+        #main {
+            display: none;
+            transition: 15s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFQ5WX9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="superMain">
+        <div id="start" v-on:click="runSite">
+            <button id="funBtn">{{ headline }}</button>
+        </div>
+        <div id="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <p>{{ name1 }}</p>
+                        <div class="color">
+                            <a v-bind:href="link1" target=""><img v-bind:src="image1" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <p>{{ name2 }}</p>
+                        <div class="color">
+                            <a v-bind:href="link2" target=""><img v-bind:src="image2" class="img-responsive"></a></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- HTML5 Audio Tag https://www.w3schools.com/html/html5_audio.asp -->
+        <div id="music">
+            <audio controls id="myMusic">
+                <source v-bind:src="music" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
